@@ -1,0 +1,19 @@
+ResursFuture extra produces a list of unpublished resources counting from the moment a user visited the site.
+ 
+Example snippet call
+[[!ResursFuture]]
+snippet call parameters
+&parents - child resource, you can specify several comma
+&limit - limit the output of the resource, the default is 1
+&resTpl - template to display the resource, the default resTpl
+&includeTVs - Indicates if TemplateVar values should be included 
+              in the properties available to each resource template, default 0
+&processTVs - Indicates if TemplateVar values should be rendered as they would on the resource
+              being summarized. TemplateVars must be included (see includeTVs/includeTVList)
+              to be processed, default 0
+&tvPrefix - The prefix for TemplateVar properties, default tv.
+An example of an extended snippet call
+[[!ResursFuture? &parents=`15,23` &resTpl=`myTpl` &includeTVs=`1` &processTVs=`1`]]
+
+Sentences on an e-mail: info@artdevue.com
+The author: Valentine Rasulov
